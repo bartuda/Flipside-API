@@ -1,0 +1,30 @@
+https://api-docs-v2.flipsidecrypto.com/
+
+How to get access
+            To get access to the Flipside API, generate an API key at the following page:
+            https://app.flipsidecrypto.com/settings/api
+            Note: You will need to log in or create an account.
+
+API Server URL
+            The Flipside API runs at:       https://api.flipsidecrypto.com/api/v2
+            All API requests must be prefixed by the API server URL.
+
+Authorization
+            Flipside allows you to authenticate by providing your key a query parameter:
+            For example:          https://api.flipsidecrypto.com/api/v2/metrics/projects?api_key={your-api-key}
+            You must include your API key as a query paremeter in every request.
+
+
+
+GET Get Projects
+            https://api.flipsidecrypto.com/api/v2/metrics/projects?api_key={{api_key}}
+            Returns an array of Projects.
+
+Response Fields
+            Key	Data        Type	    Description
+
+            project_id	    uuid	    Flipside Project ID.
+            name	        string	    Name of the Project.
+            slug	        string	    Snake case name of the Project.
+            cmc_id	        integer	    CoinMarketCap ID (if applicable).
+            symbol	        string	    Symbol of the Project.
